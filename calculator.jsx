@@ -20,6 +20,11 @@ class Calculator extends React.Component {
         this.setState({ num1 }); //set state of num1
     } 
 
+    setNum2(e) {
+        const num2 = e.target.value ? parseInt(e.target.value) : ""; //declare num2 to an integer, parse digits too
+        this.setState({ num2 }); //set state of num2
+    }
+
     render() {
         return (
             <div>
