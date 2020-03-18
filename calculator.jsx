@@ -6,6 +6,13 @@ class Calculator extends React.Component {
         this.state = { num1: "", num2: "", result: 0}; //initialize state to 2 nums and sum is 0
         this.setNum1 = this.setNum1.bind(this); //initialize and bind num1 to instance of calculator to be used throughout the class component
         this.setNum2 = this.setNum2.bind(this); //initialize and bind num2 to instance of calculator to be used throughout the class component
+
+        //bind the standard calculator operations to the class to allow use math operations in the class component
+        this.add = this.add.bind(this);
+        this.subtract = this.subtract.bind(this);
+        this.multiply = this.multiply.bind(this);
+        this.divide = this.divide.bind(this);
+        this.clear = this.clear.bind(this); //allow restart calculation default to sum 0
     }
 
     render() {
