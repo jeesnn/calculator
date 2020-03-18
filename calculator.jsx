@@ -15,6 +15,11 @@ class Calculator extends React.Component {
         this.clear = this.clear.bind(this); //allow restart calculation default to sum 0
     }
 
+    setNum1(e) { //input event
+        const num1 = e.target.value ? parseInt(e.target.value) : ""; //declare num1 to an integer, parse digits
+        this.setState({ num1 }); //set state of num1
+    } 
+
     render() {
         return (
             <div>
