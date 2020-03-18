@@ -39,6 +39,12 @@ class Calculator extends React.Component {
         this.setState = ({ result });  //set state of subtract result
     }
 
+    multiply(e) {
+        e.preventDefault();
+        const result = this.state.num1 * this.state.num2; //multiply operation
+        this.setState = ({ result });
+    }
+
     render() {
         return (
             <div>
