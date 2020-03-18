@@ -58,11 +58,14 @@ class Calculator extends React.Component {
 
     render() {
         const { num1, num2, result } = this.state;
+        //onChange event locally to set the component state according to current set num value
         return (
             <div>
                 <h1>{result}</h1>
 
-                
+                <input onChange={this.setNum1} value={num1}/> 
+                <input onChange={this.setNum2} value={num2}/>
+                <button onClick={this.clear}>Clear</button>
             </div>
         );
     }
