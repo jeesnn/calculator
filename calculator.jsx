@@ -45,6 +45,12 @@ class Calculator extends React.Component {
         this.setState = ({ result });
     }
 
+    divide(e) {
+        e.preventDefault();
+        const result = this.state.num1 / this.state.num2; //divide operation
+        this.setState = ({ result });
+    }
+
     render() {
         return (
             <div>
