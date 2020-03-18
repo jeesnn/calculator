@@ -51,6 +51,11 @@ class Calculator extends React.Component {
         this.setState = ({ result });
     }
 
+    clear(e) { //clear function means no num1 and num2 defined and result is default 0
+        e.preventDefault();
+        this.setState({ num1: "", num2: "", result: 0 }); //reset num1, num2, result in state to be 0
+    }
+
     render() {
         return (
             <div>
