@@ -60,7 +60,9 @@ class Calculator extends React.Component {
         const { num1, num2, result } = this.state;
         return (
             <div>
+                <h1>{result}</h1>
 
+                
             </div>
         );
     }
